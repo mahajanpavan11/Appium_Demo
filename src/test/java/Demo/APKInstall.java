@@ -13,7 +13,7 @@ public class APKInstall {
 		// Gather Desired Capabilities
 		DesiredCapabilities dc=new DesiredCapabilities();
 		
-		dc.setCapability("deviceName", "codestudio");
+		dc.setCapability("deviceName", "virtual");
 		dc.setCapability("platformname", "Android");
 		dc.setCapability("automationName", "UiAutomator2");
 		dc.setCapability("app", "C:\\Users\\pavan\\Downloads\\APKFiles-1\\resources\\General-Store.apk");
