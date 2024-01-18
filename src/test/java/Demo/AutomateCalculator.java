@@ -11,15 +11,15 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import io.appium.java_client.android.AndroidDriver;
 
 public class AutomateCalculator {
+              // appPakage & appActivity by using command prompt [dumpsys window displays | grep -e 'mCurrentFocus']
+	     //	 com.google.android.calculator/com.android.calculator2.Calculator
 
-	//	 com.google.android.calculator/com.android.calculator2.Calculator
 
-
-	public static void main(String[] args) throws MalformedURLException, InterruptedException {
+	public static void main(String[] args) throws MalformedURLException, InterruptedException 
+	{
 		// TODO Auto-generated method stub
 
 		//Gather Desired capabilities
-
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
 		capabilities.setCapability("deviceName","codestudio");
