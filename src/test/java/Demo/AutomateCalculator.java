@@ -11,15 +11,15 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import io.appium.java_client.android.AndroidDriver;
 
 public class AutomateCalculator {
+              // appPakage & appActivity by using command prompt [dumpsys window displays | grep -e 'mCurrentFocus']
+	     //	 com.google.android.calculator/com.android.calculator2.Calculator
 
-	//	 com.google.android.calculator/com.android.calculator2.Calculator
 
-
-	public static void main(String[] args) throws MalformedURLException, InterruptedException {
+	public static void main(String[] args) throws MalformedURLException, InterruptedException 
+	{
 		// TODO Auto-generated method stub
 
 		//Gather Desired capabilities
-
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
 		capabilities.setCapability("deviceName","codestudio");
@@ -29,8 +29,6 @@ public class AutomateCalculator {
 
 		capabilities.setCapability("appPackage","com.google.android.calculator");
 		capabilities.setCapability("appActivity", "com.android.calculator2.Calculator");
-
-
 
 		URL url = URI.create("http://127.0.0.1:4723/").toURL();
 
@@ -51,11 +49,9 @@ public class AutomateCalculator {
 		WebElement num2 =  driver.findElement(By.id("com.google.android.calculator:id/digit_2"));
 		num2.click(); //perform click action on number 8
 
-
 		//click on equal sign
 		WebElement equal =  driver.findElement(By.id("com.google.android.calculator:id/eq"));
 		equal.click(); //perform click action on number 8
-
 
 		//click on result sign
 		WebElement result =  driver.findElement(By.id("com.google.android.calculator:id/result_container"));
@@ -70,9 +66,8 @@ public class AutomateCalculator {
 			System.out.println("fail");
 		}
 
-
-
-		driver.quit();//CLOSE SESSION
+		//CLOSE SESSION
+		driver.quit();
 
 	}
 

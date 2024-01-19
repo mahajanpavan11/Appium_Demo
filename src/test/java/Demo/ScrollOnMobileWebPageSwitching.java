@@ -59,9 +59,9 @@ public class ScrollOnMobileWebPageSwitching {
 			monitoredSwitch.click();
 		}
 
-
+		//CLOSE SESSION
 		Thread.sleep(5000);
-		driver.quit();//CLOSE SESSION
+		driver.quit();
 
 
 

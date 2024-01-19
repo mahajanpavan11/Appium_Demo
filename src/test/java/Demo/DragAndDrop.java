@@ -53,18 +53,13 @@ public class DragAndDrop {
 		
 		WebElement target=driver.findElement(By.xpath("//android.view.View[@resource-id=\"io.appium.android.apis:id/drag_dot_2\"]"));
 		
-	 // By using touch action class
+	        // By using touch action class
 		TouchAction action=new TouchAction(driver);
 		
-	//	action.longPress(LongPressOptions().withElement(element(source))).moveTo(element(target)).release().perform();
-		  
-		
+		action.longPress(LongPressOptions().withElement(element(source))).moveTo(element(target)).release().perform();
 		
 		Thread.sleep(5000);
 		driver.quit();//CLOSE SESSION
 
 	}
-
-	
-
 }
