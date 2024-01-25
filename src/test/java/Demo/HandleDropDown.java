@@ -49,7 +49,7 @@ public class HandleDropDown {
 		
 		
 		System.out.println("close application");
-        Thread.sleep(4000);
+                 Thread.sleep(4000);
 		// close application
 		driver.quit();
 		
