@@ -17,9 +17,9 @@ public class HandleDropDown {
 	   // Gather DesiredCapabilities
 
 		DesiredCapabilities dc=new DesiredCapabilities();
-		dc.setCapability("devicename", "Virtual");
+		dc.setCapability("devicename", "Test");
 		dc.setCapability("platformname", "android");
-		dc.setCapability("platformversion", "11");
+		dc.setCapability("platformversion", "10");
 		dc.setCapability("automationName", "uiautomator2");
 		
 		dc.setCapability("appPackage", "io.appium.android.apis");
